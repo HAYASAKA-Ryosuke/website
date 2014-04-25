@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+    <title> kuronekopages </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{media_url('css/bootflat.css')}}">
+</head>
+<body>
+    <div class="topic">
+        <div class="container">
+            <h3>Documentation</h3>
+            <h4>The complete style of the Bootflat Framework</h4>
+        </div>
+        <div class="topic__infos">
+            <div class="container">
+                Bootflat offers over a dozen reusable components, which can be combined with each other.
+            </div>
+        </div>
+      </div>
+    <article id="content">
+        {% filter markdown -%}
+        {% block content %}{% endblock %}
+        {%- endfilter %}
+    </article>
+</body>
+</html>
