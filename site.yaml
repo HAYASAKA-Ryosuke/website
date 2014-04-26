@@ -3,7 +3,7 @@ media_root: media/bootflat
 media_url: /media/bootflat
 
 meta: 
-    title: Default title
+    title: kuronekopages
 
 base_url: /
 template: hyde.ext.templates.jinja.Jinja2Template
