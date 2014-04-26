@@ -1,9 +1,25 @@
 mode: learning
 media_root: media/bootflat
 media_url: /media/bootflat
-title: kuroneko
+
+meta: 
+    title: Default title
+
 base_url: /
 template: hyde.ext.templates.jinja.Jinja2Template
+
+plugins:
+    - hyde.ext.plugins.meta.MetaPlugin
+    - hyde.ext.plugins.auto_extend.AutoExtendPlugin
+    - hyde.ext.plugins.blockdown.BlockdownPlugin
+    - hyde.ext.plugins.sorter.SorterPlugin
+    - hyde.ext.plugins.grouper.GrouperPlugin
+    - hyde.ext.plugins.markings.MarkingsPlugin
+    - hyde.ext.plugins.markings.ReferencePlugin
+    - hyde.ext.plugins.syntext.SyntextPlugin
+    - hyde.ext.plugins.textlinks.TextlinksPlugin
+    - hyde.ext.plugins.stylus.StylusPlugin
+
 context:
     data:
         author:
