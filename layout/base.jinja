@@ -10,52 +10,48 @@
     <script type="text/javascript" src="{{media_url('js/site.min.js')}}"></script>
 </head>
 <body style="background-color: #F5F7FA;">
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">KuronekoPage</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="https://github.com/HAYASAKA-Ryosuke">About</a></li>
-            <li class="active"><a href="https://twitter.com/kuroneko1988">趣味</a></li>
-            <!-- <li class="disabled"><a href="#">Link</a></li> -->
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">SNS<b class="caret"></b></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="https://github.com/HAYASAKA-Ryosuke">GitHub</a></li>
-                <li><a href="https://twitter.com/kuroneko1988">Twitter</a></li>
-                <li><a href="http://kuroneko0208.hatenablog.com">Blog</a></li>
-                <li><a href="https://www.facebook.com/hayasaka.ryosuke">FaceBook</a></li>
-                <li class="dropdown-header">Setting</li>
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="active"><a href="#">Separated link</a></li>
-                <li class="divider"></li>
-                <li class="disabled"><a href="#">One more separated link</a></li>
+<div class="container">
+  <div class="row">
+    <div class="col-md1">
+        <nav class="nav navbar navbar-inverse navbar-right navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">KuronekoPage</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="About">About</a></li>
+                <li class="active"><a href="Software">ソフトウェア</a></li>
+                <li class="active"><a href="Books">読書</a></li>
+                <!-- <li class="disabled"><a href="#">Link</a></li> -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">SNS<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="https://github.com/HAYASAKA-Ryosuke">GitHub</a></li>
+                    <li><a href="https://twitter.com/kuroneko1988">Twitter</a></li>
+                    <li><a href="http://kuroneko0208.hatenablog.com">Blog</a></li>
+                    <li><a href="https://www.facebook.com/hayasaka.ryosuke">FaceBook</a></li>
+                  </ul>
+                </li>
               </ul>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-    <article id="content">
-        {% filter markdown -%}
-        {% block content %}{% endblock %}
-        {%- endfilter %}
-        {% filter markdown -%}
-        {% block hobby %}{% endblock %}
-        {%- endfilter %}
-    </article>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        <article id="content">
+            {% filter markdown -%}
+            {% block About %}{% endblock %}
+            {%- endfilter %}
+            {% filter markdown -%}
+            {% block Software %}{% endblock %}
+            {%- endfilter %}
+            {% filter markdown -%}
+            {% block Books %}{% endblock %}
+            {%- endfilter %}
+        </article>
+    </div>
+    </div>
+</div>
 </body>
 </html>
