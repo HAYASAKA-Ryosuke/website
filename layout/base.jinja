@@ -10,7 +10,7 @@
     <script type="text/javascript" src="{{media_url('js/site.min.js')}}"></script>
     <script type="text/javascript">
       $(function(){
-          $("#myTab1 a").click(function(){
+          $("#myTab1 li a").click(function(){
             var value = $(this).attr("href");
             if(value=="#software"){
               $("body").css("background-image",'url("{{media_url('img/pixel_weave.png')}}")');
