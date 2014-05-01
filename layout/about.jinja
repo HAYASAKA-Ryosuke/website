@@ -1,0 +1,183 @@
+<div class="tab-pane fade" id="about">
+    <div class="col-xs-6 col-md-4">
+        <p>About</p>
+    </div>
+    <div class="col-xs-12 col-md-8">
+        <article>
+            {% filter markdown -%}
+            {% block AboutWho %}{% endblock %}
+            {%- endfilter %}
+        </article>
+
+        <div class="panel-group panel-group-lists" id="accordion1">
+            <div class="panel">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
+                      1. 人を尊敬する
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <article>
+                      {% filter markdown -%}
+                      {% block AboutMentalIntention1 %}{% endblock %}
+                      {%- endfilter %}
+                    </article>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">
+                      2. 人に期待しない
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <article>
+                      {% filter markdown -%}
+                      {% block AboutMentalIntention2 %}{% endblock %}
+                      {%- endfilter %}
+                    </article>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree">
+                      3. 無理に話をしない
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <article>
+                      {% filter markdown -%}
+                      {% block AboutMentalIntention3 %}{% endblock %}
+                      {%- endfilter %}
+                    </article>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseFour">
+                      4. わからないと言う勇気
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <article>
+                      {% filter markdown -%}
+                      {% block AboutMentalIntention4 %}{% endblock %}
+                      {%- endfilter %}
+                    </article>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseFive">
+                      5. 適度な距離を保つ
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFive" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <article>
+                      {% filter markdown -%}
+                      {% block AboutMentalIntention5 %}{% endblock %}
+                      {%- endfilter %}
+                    </article>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseSix">
+                      6. 趣味を持つ
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseSix" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <article>
+                      {% filter markdown -%}
+                      {% block AboutMentalIntention6 %}{% endblock %}
+                      {%- endfilter %}
+                    </article>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseSeven">
+                      7. 死ぬのはゴール
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseSeven" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <article>
+                      {% filter markdown -%}
+                      {% block AboutMentalIntention7 %}{% endblock %}
+                      {%- endfilter %}
+                    </article>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseEight">
+                      8. 幸せなどない
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseEight" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <article>
+                      {% filter markdown -%}
+                      {% block AboutMentalIntention8 %}{% endblock %}
+                      {%- endfilter %}
+                    </article>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseNine">
+                      9. 友人を作らない
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseNine" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <article>
+                      {% filter markdown -%}
+                      {% block AboutMentalIntention9 %}{% endblock %}
+                      {%- endfilter %}
+                    </article>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <article>
+            {% filter markdown -%}
+            {% block AboutName %}{% endblock %}
+            {%- endfilter %}
+        </article>
+    </div>
+</div>
