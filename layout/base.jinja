@@ -14,13 +14,20 @@
           $("#myTab1 li a").click(function(){
             var value = $(this).attr("href");
             if(value=="#software"){
-              $("body").css("background-image",'url("{{media_url('img/softwarebackground.png')}}")');
-              }
+                $("#pages").hide();
+                $("#pages").load('software.html');
+                $("#pages").fadeIn("slow");
+                $("body").css("background-image",'url("{{media_url('img/softwarebackground.png')}}")');
+            }
             else if(value=="#books"){
-              $("body").css("background-image",'url("{{media_url('img/booksbackground.png')}}")');
-              }
-            });
+                $("#pages").hide();
+                $("#pages").load('books.html');
+                $("#pages").fadeIn("slow");
+                $("body").css("background-image",'url("{{media_url('img/booksbackground.png')}}")');
+            }
+          });
       });
+
     </script> 
 </head>
 <body>
@@ -51,12 +58,8 @@
         </nav>
     </div>
     <div class="row">
-        <div id="myTabContent" class="tab-content">
-          {% include "top.jinja" %}
-          {% include "about.jinja" %}
-          {% include "software.jinja" %}
-          {% include "books.jinja" %} 
-        </div>
-    </div> 
+            <div id="pages"></div>
+    </div>
+
 </body>
 </html>
