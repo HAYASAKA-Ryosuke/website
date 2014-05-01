@@ -1,6 +1,6 @@
 mode: learning
-media_root: media/bootflat
-media_url: /media/bootflat
+media_root: media
+media_url: /media
 
 meta: 
     title: kuronekopages
