@@ -1,0 +1,12 @@
+<div class="tab-pane fade active in" id="top">
+    <div class="col-xs-6 col-md-4">
+        <p>KuronekoPages</p>
+    </div>
+    <div class="col-xs-12 col-md-8">
+        <article>
+            {% filter markdown -%}
+            {% block Intro %}{% endblock %}
+            {%- endfilter %}
+        </article>
+    </div>
+</div>
