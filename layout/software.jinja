@@ -1,10 +1,32 @@
+<script type="text/javascript" src="{{media_url('js/scroll.js')}}"></script>
 <div class="col-xs-6 col-md-4">
-    <p>ソフトウェア</p>
+    <h1>ソフトウェア</h1>
+    <ul> 
+        <li><a href="#Aboutsoftware" class="scroll">ソフトウェア</a></li>
+        <li><a href="#MyFavoriteLanguage" class="scroll">好きな言語</a></li>
+        <li><a href="#WhatILikeSoftwareDevelop" class="scroll">プログラミングの好きなところ</a></li>
+    </ul>
 </div>
 <div class="col-xs-12 col-md-8">
-    <article>
-        {% filter markdown -%}
-        {% block Software %}{% endblock %}
-        {%- endfilter %}
-    </article>
+    <div id="Aboutsoftware">
+        <article>
+            {% filter markdown -%}
+            {% block AboutSoftware %}{% endblock %}
+            {%- endfilter %}
+        </article>
+    </div>
+    <div id="MyFavoriteLanguage">
+        <article>
+            {% filter markdown -%}
+            {% block MyFavoriteLanguage %}{% endblock %}
+            {%- endfilter %}
+        </article>
+    </div>
+    <div id="WhatILikeSoftwareDevelop">
+        <article>
+            {% filter markdown -%}
+            {% block WhatILikeSoftwareDevelop %}{% endblock %}
+            {%- endfilter %}
+        </article>
+    </div>
 </div>

@@ -1,10 +1,24 @@
+<script type="text/javascript" src="{{media_url('js/scroll.js')}}"></script>
 <div class="col-xs-6 col-md-4">
-    <p>本</p>
+    <h1>本</h1>
+    <ul>
+        <li><a href="#hobbybook" class="scroll">趣味としての読書</a></li>
+        <li><a href="#publish" class="scroll">出版</a></li>
+    </ul>
 </div>
 <div class="col-xs-12 col-md-8">
-    <article>
-        {% filter markdown -%}
-        {% block Books %}{% endblock %}
-        {%- endfilter %}
-    </article>
+    <div id="hobbybook">
+        <article>
+            {% filter markdown -%}
+            {% block hobbybook %}{% endblock %}
+            {%- endfilter %}
+        </article>
+    </div>
+    <div id="publish">
+        <article>
+            {% filter markdown -%}
+            {% block publish%}{% endblock %}
+            {%- endfilter %}
+        </article>
+    </div>
 </div>

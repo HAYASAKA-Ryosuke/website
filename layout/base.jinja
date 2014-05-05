@@ -1,77 +1,46 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <title> {{ site.meta.title }}</title> 
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="{{media_url('favicon.ico')}}">
-    <link rel="stylesheet" href="{{media_url('css/site.min.css')}}">
-    <style type="text/css">
-        body {padding-top: 70px; padding-left:50px; padding-right:20px; padding-bottom:100px; background-color:#e5e5e5;}
-    </style>
-    <script type="text/javascript" src="{{media_url('js/site.min.js')}}"></script>
-    <script type="text/javascript">
-      $(function(){
-          $("#myTab1 li a").click(function(){
-            var value = $(this).attr("href");
-            if(value=="#top"){
-                $("#pages").hide();
-                $("#pages").load('top.html');
-                $("#pages").fadeIn("slow");
-                $("body").css("background-image",'url("{{media_url('img/topbackground.png')}}")');
-            }
-            else if(value=="#about"){
-                $("#pages").hide();
-                $("#pages").load('about.html');
-                $("#pages").fadeIn("slow");
-                $("body").css("background-image",'url("{{media_url('img/aboutbackground.png')}}")');
-            }
-            else if(value=="#software"){
-                $("#pages").hide();
-                $("#pages").load('software.html');
-                $("#pages").fadeIn("slow");
-                $("body").css("background-image",'url("{{media_url('img/softwarebackground.png')}}")');
-            }
-            else if(value=="#books"){
-                $("#pages").hide();
-                $("#pages").load('books.html');
-                $("#pages").fadeIn("slow");
-                $("body").css("background-image",'url("{{media_url('img/booksbackground.png')}}")');
-            }
-          });
-      });
-
-    </script> 
+<title> {{ site.meta.title }}</title> 
+<meta charset="utf-8">
+<link rel="shortcut icon" href="{{media_url('favicon.ico')}}">
+<link rel="stylesheet" href="{{media_url('css/site.min.css')}}">
+<style type="text/css">
+    body {padding-top: 70px; padding-left:50px; padding-right:20px; padding-bottom:100px; background-color:#e5e5e5;}
+</style>
+<script type="text/javascript" src="{{media_url('js/site.min.js')}}"></script>
+<script type="text/javascript" src="{{media_url('js/base.js')}}"></script>
 </head>
 <body>
-    <div class="container">
-        <nav class="nav navbar navbar-inverse navbar-right navbar-fixed-top" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">KuronekoPage</a>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
-                    <ul id="myTab1" class="nav navbar-nav">
-                        <li class="active"><a href="#top" data-toggle="tab">Top</a></li>
-                        <li><a href="#about" data-toggle="tab">About</a></li>
-                        <li><a href="#software" data-toggle="tab">ソフトウェア</a></li>
-                        <li><a href="#books" data-toggle="tab">読書</a></li>
-                        <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown">SNS<b class="caret"></b></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="https://github.com/HAYASAKA-Ryosuke">GitHub</a></li>
-                            <li><a href="https://twitter.com/kuroneko1988">Twitter</a></li>
-                            <li><a href="http://kuroneko0208.hatenablog.com">Blog</a></li>
-                            <li><a href="https://www.facebook.com/hayasaka.ryosuke">FaceBook</a></li>
-                        </ul>
-                        </li>
+<div class="container">
+    <nav class="nav navbar navbar-inverse navbar-right navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">KuronekoPage</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
+                <ul id="myTab1" class="nav navbar-nav">
+                    <li class="active"><a href="#top" data-toggle="tab">Top</a></li>
+                    <li><a href="#about" data-toggle="tab">About</a></li>
+                    <li><a href="#software" data-toggle="tab">ソフトウェア</a></li>
+                    <li><a href="#books" data-toggle="tab">読書</a></li>
+                    <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">SNS<b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="https://github.com/HAYASAKA-Ryosuke">GitHub</a></li>
+                        <li><a href="https://twitter.com/kuroneko1988">Twitter</a></li>
+                        <li><a href="http://kuroneko0208.hatenablog.com">Blog</a></li>
+                        <li><a href="https://www.facebook.com/hayasaka.ryosuke">FaceBook</a></li>
                     </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
-    </div>
-    <div class="row">
-            <div id="pages"></div>
-    </div>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+<div class="row">
+    <div id="pages"></div>
+</div>
 
 </body>
 </html>
