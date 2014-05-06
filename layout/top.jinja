@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="{{media_url('css/example_ticker.css')}}">
 <div class="col-xs-6 col-md-4">
     <p>KuronekoPages</p>
 </div>
@@ -7,5 +8,14 @@
         {% block Intro %}{% endblock %}
         {%- endfilter %}
     </article>
+    <div class="col-xs-6 col-md-6">
+        <div id="blog"></div>
+    </div>
+    <div class="col-xs-6 col-md-6">
+        <div id="github"></div>
+    </div>
 </div>
 <script type="text/javascript" src="{{media_url('js/scroll.js')}}"></script>
+<script type="text/javascript" src="{{media_url('js/jquery.zrssfeed.min.js')}}"></script>
+<script type="text/javascript" src="{{media_url('js/jquery.vticker.js')}}"></script>
+<script type="text/javascript" src="{{media_url('js/rssfeed.js')}}"></script>
