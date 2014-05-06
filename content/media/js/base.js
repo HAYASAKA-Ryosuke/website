@@ -5,6 +5,17 @@ $(function(){
             $("#pages").fadeIn("slow");
             $("body").css("background-image",'url("{{media_url('img/topbackground.png')}}")');
         }
+        $(".navbar-brand").click(function(){
+            var value = $(this).attr("href");
+            if(value=="#top"){
+		location.reload();
+                $("#pages").hide();
+                $("#pages").load('top.html');
+                $("#pages").fadeIn("slow");
+                $("body").css("background-image",'url("{{media_url('img/topbackground.png')}}")');
+    		$('html, body').animate({scrollTop: 0}, 0);
+            }
+        });
         $("#myTab1 li a").click(function(){
             var value = $(this).attr("href");
             if(value=="#top" || value==""){
