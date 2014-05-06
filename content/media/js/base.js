@@ -8,6 +8,7 @@ $(function(){
         $("#myTab1 li a").click(function(){
             var value = $(this).attr("href");
             if(value=="#top" || value==""){
+		location.reload();
                 $("#pages").hide();
                 $("#pages").load('top.html');
                 $("#pages").fadeIn("slow");

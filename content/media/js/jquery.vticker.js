@@ -10,7 +10,7 @@
 
 $.fn.vTicker = function(options) {
 	var defaults = {
-		speed: 700,
+		speed: 400,
 		pause: 4000,
 		showItems: 3,
 		animation: '',
