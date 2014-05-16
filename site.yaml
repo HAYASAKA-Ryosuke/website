@@ -31,5 +31,5 @@ context:
 publisher:
     github:
         type: hyde.ext.publishers.dvcs.Git
-        path: ../website
-        url: git@github.com:HAYASAKA-Ryosuke/website.git
+        path: ../http://hayasaka-ryosuke.github.io
+        url: git@github.com:HAYASAKA-Ryosuke/hayasaka-ryosuke.github.io.git
