@@ -4,6 +4,14 @@
     {% block Intro %}{% endblock %}
     {%- endfilter %}
 </article>
+
+<div id="AboutWho">
+    <article>
+        {% filter markdown -%}
+        {% block AboutWho %}{% endblock %}
+        {%- endfilter %}
+   </article>
+</div>
 <div class="col-md-4">
     <div id="blog"></div>
 </div>
